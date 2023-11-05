@@ -1,2 +1,5 @@
-# pede-revisor
-A revision script for FiveM.
+# Dependencies 
+> ox_lib
+> ox_target
+> esx_society
+> esx_addonaccount
