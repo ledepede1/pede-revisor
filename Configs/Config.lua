@@ -1,7 +1,5 @@
 Config = {}
 
-Config.WebhookURL = ""
-
 Config.JobName = "revisor"
 Config.RevisionCoords = vector3(-126.0892,-641.5922,168.8203) -- x = -126.0892,  y = -641.2422,  z = 168.8203
 
