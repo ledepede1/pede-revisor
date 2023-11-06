@@ -4,7 +4,16 @@
   Jeg har planer om i fremtiden opdatere det endu mere evt mulighed for at tilføje flere firmaer i et script.</p>
 
 # Dependencies 
-> ox_lib
-> ox_target
-> esx_society
-> esx_addonaccount
+> <p>ox_lib</p>
+> <p>ox_target</p>
+> <p>esx_society</p>
+> <p>esx_addonaccount</p>
+
+# Setup
+<p>Downlaod den nyeste version af scriptet</p>
+<p>Sæt begge configs op til din servers behov</p>
+<p>Importer sql'en ind i din database</p>
+<p>Genstart serveren og hav det fedt</p>
+
+# Support
+<p>Har man brug for hjælp kan man kontakte mig på min</p> [Discord Server](https://discord.gg/u5G4rtAX)
