@@ -32,6 +32,7 @@ client_scripts {
 }
 
 server_scripts {
+  'Configs/SV_Config.lua',
   'Server/Server.lua',
 }
 
