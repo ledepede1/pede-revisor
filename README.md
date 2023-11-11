@@ -16,4 +16,4 @@
 <p>Genstart serveren og hav det fedt</p>
 
 # Support
-<p>Har man brug for hjælp kan man kontakte mig på min</p> [Discord](https://discord.gg/u5G4rtAX) [GitHub](https://github.com/ledepede1/golicense/releases/latest)
+- Har man brug for hjælp kan man kontakte mig på min [Discord](https://discord.gg/u5G4rtAX)
