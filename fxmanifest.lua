@@ -11,9 +11,10 @@ ox_lib
 ox_target
 esx_society
 esx_addonaccount
+oxmysql
 ]]--
 
-version '1.0'
+version '1.1'
 
 lua54 'yes'
 
@@ -32,6 +33,7 @@ client_scripts {
 }
 
 server_scripts {
+  '@oxmysql/lib/MySQL.lua',
   'Configs/SV_Config.lua',
   'Server/Server.lua',
 }

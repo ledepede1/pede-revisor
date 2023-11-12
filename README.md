@@ -8,6 +8,7 @@
 > <p>ox_target</p>
 > <p>esx_society</p>
 > <p>esx_addonaccount</p>
+> <p>oxmysql</p>
 
 # Setup
 <p>Downlaod den nyeste version af scriptet</p>

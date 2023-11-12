@@ -1,3 +1,3 @@
-Config = {}
+SVConfig = {}
 
-Config.WebhookURL = ""
+SVConfig.WebhookURL = ""

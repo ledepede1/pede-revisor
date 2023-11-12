@@ -13,6 +13,7 @@ AddEventHandler('esx:setJob', function(job)
     ESX.PlayerData.job = job
 end)
 
+
 -- Creating the progressbar and doing an emote/task
 RegisterNetEvent('ProgressBar:Pede')
 AddEventHandler('ProgressBar:Pede', function(cash, duration)
@@ -24,7 +25,7 @@ AddEventHandler('ProgressBar:Pede', function(cash, duration)
 
     if lib.progressBar({
         duration = duration,
-        label = Config.Progressbar..cash.."DKK",
+        label = Config.Progressbar..cash..Config.Valuta,
         useWhileDead = false,
         canCancel = false,
         disable = {
@@ -35,7 +36,7 @@ AddEventHandler('ProgressBar:Pede', function(cash, duration)
     }) then 
         lib.notify({
             title = Config.Notifications.LaunderingDone.Title,
-            description = 'Bogføring af '..cash..' DKK er nu færdigt! Det tog ialt '..(math.floor(duration/1000%60))..' Sekunder',
+            description = 'Bogføring af '..cash..Config.Valuta..'er nu færdigt! Det tog ialt '..(math.floor(duration/1000%60))..' Sekunder',
             type = Config.Notifications.LaunderingDone.Type
         })
         ClearPedTasksImmediately(PlayerPedId()) 
@@ -54,7 +55,7 @@ end)
 -- Sends notify every Config.NotifyShowTime
 RegisterNetEvent("UpdateSeconds:pede")
 AddEventHandler("UpdateSeconds:pede", function(ms)
-    if ms - Config.NotifyShowTime * 1000 < 5 then return end
+   --if ms - Config.NotifyShowTime * 1000 < 5 then return end
     while running == true do
         Citizen.Wait(5000)
         ms = ms - Config.NotifyShowTime * 1000
@@ -79,8 +80,8 @@ AddEventHandler('notify:pede', function(title, description, type)
 end)
 
 -- Function to check if player is boss for the Config.JobName
-function CheckIfBoss()
-    local JobNeeded = Config.JobName
+function CheckIfBoss(jobname)
+    local JobNeeded = jobname
     local grade = 'boss'
     
     if ESX.PlayerData.job.name == JobNeeded and ESX.PlayerData.job.grade_name == grade then
