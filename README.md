@@ -13,7 +13,6 @@
 # Setup
 <p>Downlaod den nyeste version af scriptet</p>
 <p>Sæt begge configs op til din servers behov</p>
-<p>De job navne du angiver i Config.Companyes skal du selv ind og oprette i din database</p>
 <p>Genstart serveren og hav det fedt</p>
 
 # Support
