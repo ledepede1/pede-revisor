@@ -32,6 +32,8 @@ function RevisorMoneyMenu(society, jobname)
     local input = lib.inputDialog(Config.Menus.DialogTitle, {
         {type = 'number', label = Config.Menus.DialogAmountLabel, description = Config.Menus.DialogAmountLabel, icon = Config.Menus.DialogAmountIcon, required = true},
         {type = 'number', label = Config.Menus.DialogPercentLabel, description = Config.Menus.DialogPercentDescription, icon = Config.Menus.DialogPercentIcon, required = true},
+        {type = 'checkbox', label = Config.Menus.DialogCheckBoxLabel, required = true},
+        {type = 'date', label = Config.Menus.DateLabel, required = true, default = true, format = "DD/MM/YYYY"},
       })
 
       if not input then return end -- Just so ox-lib dosent spam in the console

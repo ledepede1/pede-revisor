@@ -3,7 +3,7 @@ Config = {}
 Config.Companys = {
     ["PedersRevisor"] = {
         CompaneName = "Peders Revisor", -- Label til society'et
-        JobName = "pedersrevisor", -- Navnet på jobbet som man skal bruge for at være revisor i det her firma (Job navnet er det samme som society navnet)
+        JobName = "police", -- Navnet på jobbet som man skal bruge for at være revisor i det her firma (Job navnet er det samme som society navnet)
         RevisionCoords = vector3(-126.0892,-641.5922,168.8203), -- Koordinater hvor target skal placeres
         TargetLabel = "Åben revisions menu",
         TargetIcon = "fa-solid fa-building-columns",
@@ -43,8 +43,12 @@ Config.Menus = {
         DialogAmountIcon = "money-bill-wave",
 
         DialogPercentLabel = "Procentsats",
-        DialogPercentDescription = "Procent der skal tages af beløbet uden %",
+        DialogPercentDescription = "Procent der skal gives tilbage af beløbet uden %",
         DialogPercentIcon = "percent",
+
+        DialogCheckBoxLabel = "Er personens identitet blevet verificeret?",
+
+        DateLabel = "Dato for bogføring",
     }
 Config.Notifications = {
         LaunderingDone = {
